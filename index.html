@@ -1,36 +1,35 @@
 
+<div class="price">TZS 45,000</div>
+<button onclick="addToCart(45000)">Nunua</button>
+</div>
 
-    <div class="product">
-      <div class="emoji">📱</div>
-      <h3>Simu</h3>
-      <div class="price">TZS 50,000</div>
-      <button onclick="addToCart(50000)">Nunua</button>
-    </div>
+<div class="product">
+<div class="emoji">📱</div>
+<h3>Simu</h3>
+<div class="price">TZS 50,000</div>
+<button onclick="addToCart(50000)">Nunua</button>
+</div>
 
-  </div>
+</div>
 
-  <footer>
-    © 2026 Sokohub Market
-    <br>
-    Marketplace ya kununua na kuuza
-  </footer>
+<footer>
+© 2026 Sokohub Market<br>
+Marketplace ya kununua na kuuza
+</footer>
 
-  <script>
-    let count = 0;
-    let total = 0;
+<script>
+let count=0;
+let total=0;
 
-    function addToCart(price) {
-      count = count + 1;
-      total = total + price;
-
-      document.getElementById("count").textContent = count;
-      document.getElementById("total").textContent =
-        total.toLocaleString("en-US");
-
-      alert("Bidhaa imeongezwa kwenye kikapu 🛒");
-    }
-  </script>
+function addToCart(price){
+count++;
+total+=price;
+document.getElementById("count").textContent=count;
+document.getElementById("total").textContent=total.toLocaleString("en-US");
+alert("Bidhaa imeongezwa kwenye kikapu 🛒");
+}
+</script>
 
 </body>
 </html>
-Nd
+
