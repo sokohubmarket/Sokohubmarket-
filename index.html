@@ -1,31 +1,36 @@
-div class="product">
-      <div class="emoji">👕</div>
-      <h3>Nguo</h3>
-      <div class="price">TZS 35,000</div>
-      <button onclick="alert('Umechagua Nguo')">Nunua</button>
-    </div>
+duct">
+  <div class="emoji">📱</div>
+  <h3>Simu</h3>
+  <div class="price">TZS 50,000</div>
+  <button onclick="addToCart(50000)">Nunua</button>
+</div>
 
-    <div class="product">
-      <div class="emoji">🎧</div>
-      <h3>Headphones</h3>
-      <div class="price">TZS 45,000</div>
-      <button onclick="alert('Umechagua Headphones')">Nunua</button>
-    </div>
+</section>
 
-    <div class="product">
-      <div class="emoji">📱</div>
-      <h3>Simu</h3>
-      <div class="price">TZS 50,000</div>
-      <button onclick="alert('Umechagua Simu')">Nunua</button>
-    </div>
+<footer>
+© 2026 Sokohub Market
+<br>
+Marketplace ya kununua na kuuza
+</footer>
 
-  </section>
+<script>
+let count = 0;
+let total = 0;
 
-  <footer>
-    © 2026 Sokohub Market
-    <br>
-    Marketplace ya kununua na kuuza
-  </footer>
+function addToCart(price) {
+  count++;
+  total += price;
+
+  document.getElementById("count").textContent = count;
+  document.getElementById("total").textContent =
+    total.toLocaleString("en-US");
+
+  alert("Bidhaa imeongezwa kwenye kikapu 🛒");
+}
+</script>
 
 </body>
 </html>
+Safiii 🔥👏 Sasa code yote imefutika.
+Sasa bandika code hii yote kwenye sehemu tupu:
+HTML
